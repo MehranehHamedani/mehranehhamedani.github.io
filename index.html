@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -14,29 +13,48 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&
+    display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
     <title>😊Mehraneh Hamedani</title>
   </head>
   <body>
     <header>
       <a href="">
-        <img src="" alt="" id="logo" />
+        <!-- <img src="img/devjane.png" alt="" id="logo" /> -->
+        <img src="img/.png" alt="" id="logo" />
       </a>
       <button class="nav-toggle" aria-label="toggle navigation">
         <span class="hamburger"></span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home">Home</a></li>
-          <li class="nav__item"><a href="#projects">Projects</a></li>
-          <li class="nav__item"><a href="#about">About me</a></li>
-          <li class="nav__item"><a href="#skill">Skills</a></li>
-          <li class="nav__item"><a href="#">Contact me</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skill" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact me</a>
+          </li>
         </ul>
       </nav>
       <!-- <lightDark>
         🌞|🌛
       </lightDark> -->
     </header>
+
     <!-- Introduction -->
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
@@ -46,41 +64,33 @@
       <p class="section__subtitle section__subtitle--intro">
         Software Developer
       </p>
-      <img src="" alt="a picture of Mehraneh Hamedani smiling" />
+      <img
+        src="img/dev-jane-01.jpg"
+        alt="a picture of Mehraneh Hamedani smiling"
+        class="intro__img"
+      />
       <a href=""></a>
     </section>
-    <section class="my-projects" id="projects">
-      <h2 class="section__title" id="section__title--projects">What I do</h2>
-      <div class="projects">
-        <div class="project">
+
+    <!-- My Projects -->
+    <section class="my-services" id="projects">
+      <h2 class="section__title" id="section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
           <h3>Project with Python</h3>
-          <p>
-            The Python, Weather Project was about how to code a weather app by
-            converting unreadable data into a human readable format.
-          </p>
+          <p>The Python, Weather Project was about ...</p>
         </div>
         <!-- / Project -->
 
-        <div class="project">
+        <div class="service">
           <h3>Project with HTML, CSS, Javascript</h3>
-          <p>
-            This website is what you are now viewing. Interactive features
-            including a light and a dark mode and functional forms with
-            ReCaptcha security to prevent spam. The forms have a personal
-            redirect page. A section for a bio which includes a link to download
-            my resume. A blog, these projects and a 404 page.
-          </p>
+          <p>This website is what you are now viewing....</p>
         </div>
         <!-- / Project -->
 
-        <div class="project">
+        <div class="service">
           <h3>Project with Django, HTML, CSS, Javascript</h3>
-          <p>
-            This project was a She Codes News clone. Users could create user
-            accounts and signin to submit news stories. They could edit their
-            profile and stories and delete their stories. The stories were
-            organised by categories.
-          </p>
+          <p>This project was a She Codes News clone. ...</p>
         </div>
         <!-- / Project -->
       </div>
@@ -95,37 +105,51 @@
       <p class="section__subtitle section__subtitle--about"></p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
       </div>
 
-      <img src="" alt="Mehraneh standing near the ocean" />
+      <img
+        src="img/dev-jane-02.jpg"
+        alt="Mehraneh standing near the ocean"
+        class="about-me__img"
+      />
     </section>
 
     <!-- My Skill -->
-    <section class="my-skill" id="skill">
+    <section class="my-work" id="skill">
       <h2 class="section__title">My skills</h2>
-      <p class="section__subtitle"></p>
+      <p class="section__subtitle">A selection of my skills</p>
 
       <div class="portfolio">
         <!-- Portfolio item 01 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-01.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 02 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-02.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 03 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 04 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 05 -->
@@ -135,12 +159,12 @@
 
         <!-- Portfolio item 06 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-05.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 07 -->
         <a href="#" class="portfolio__item">
-          <img src="" alt="" class="portfolio__img" />
+          <img src="img/portfolio-06.jpg" alt="" class="portfolio__img" />
         </a>
 
         <!-- Portfolio item 08 -->
@@ -159,22 +183,34 @@
         </a>
       </div>
     </section>
-    
+
     <!-- Footer -->
-    <footer>
-        <a href="mailto:mehranehhamedani@gmail.com" class="footer-link">
-            mehranehhamedani@gmail.com
-        </a>
-        <ul class="social-list">
-            <li class="social-list__item"><a class="social-list__link" 
-                href="">a/a></li>
-            <li class="social-list__item"><a class="social-list__link"
-                href="">b</a></li>
-            <li class="social-list__item"><a class="social-list__link"
-                href="">c</a></li>
-            <li class="social-list__item"><a class="social-list__link"
-                href="">d</a></li>
-        </ul>
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://dribbble.com">
+            <i class="fab fa-dribbble"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>
