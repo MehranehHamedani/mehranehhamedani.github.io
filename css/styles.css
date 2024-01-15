@@ -6,11 +6,11 @@
 
 /* Custom Properties, update these for different designs */
 :root {
-  --ff-primary: "Lora", serif;
-  --ff-secondary: "Roboto Slab", serif;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
 
-  --fw-reg: 400;
-  --fw-bold: 700;
+  --fw-reg: 300;
+  --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -26,8 +26,8 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25) 0.125em 0.125em 0.25em
-    rgba(0, 0, 0, 0.15);
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 @media (min-width: 800px) {
@@ -40,9 +40,10 @@
 }
 
 /* General styles */
-html {
-  scroll-behavior: smooth;
-}
+/* endable this to add smooth scrolling */
+/* html {
+    scroll-behavior: smooth;
+} */
 
 body {
   background: var(--clr-light);
@@ -424,6 +425,7 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
+  font-size: var(--fs-h3);
 }
 
 .footer a {
